@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probar Suerte</title>
+</head>
+
+<body>
+    <dialog id="dialog">
+        <p>Coloque un numero para probar su suerte</p>
+        <input type="text" id="numero">
+        <button onclick="suerte()">Aceptar</button>
+        <button onclick="dialogClose()">cerrar</button>
+    </dialog>
+    <p id="details"></p>
+    <button onclick="dialogOpen()">Presione aqui</button>
+</body>
+
+<script>
+    const dialogOpen = () => {
+        let dialog = document.getElementById("dialog");
+        dialog.showModal();
+    }
+    const dialogClose = () => {
+        let dialog = document.getElementById("dialog");
+        dialog.close();
+    }
+    const suerte = () => {
+        let num = parseInt(document.getElementById("numero").value);
+        if (num === 30) {
+            document.getElementById("details").setAttribute("style", "background-color: green; color: black; border: 6px solid yellow");
+            document.getElementById("details").innerHTML = " has ganado $25 feliciades";
+            dialogClose();
+
+        } else {
+            document.getElementById("details").setAttribute("style", "background-color:red;color:white;border:6px solid black");
+            document.getElementById("details").innerHTML = " sigue intentando";
+            dialogClose();
+        }
+    }
+</script>
+
+</html>
+

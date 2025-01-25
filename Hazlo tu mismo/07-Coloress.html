@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color</title>
+</head>
+
+<body>
+    <button onclick="disko()">disco</button>
+    <p id="num1">Colores </p>
+
+</body>
+<script>
+    function disko() {
+        var n = Math.random() * 50
+        n = Math.floor(n)
+        document.getElementById("num1").innerText = n;
+        if (n > 0 && n < 30) {
+            document.body.style.backgroundColor = "yellow";
+        }
+        if (n >= 30 && n < 50) {
+            document.body.style.backgroundColor = "green";
+        }
+        if (n >= 20) {
+            document.body.style.backgroundColor = "brown";
+        }
+    }
+</script>
+
+</html>

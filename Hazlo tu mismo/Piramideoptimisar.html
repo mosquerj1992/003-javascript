@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<h1>piramide</h1>
+</body>
+<script>
+    // Crear una matriz de 10x10 con valores aleatorios entre 0 y 10
+    const crearPiramide = () => {
+        for (let i = 0; i < 6; i++) {
+
+            let tamaño = 11;
+            let inicioAsterisco = Math.floor(tamaño / 2);
+            for (let j = 0; j < tamaño; j++) {
+                let valorIdice = j;
+                if (j === inicioAsterisco){
+                    document.getElementById("output").innerHTML +="*"
+                }else{
+                    document.getElementById("output").innerHTML +="# "
+                }
+
+
+            }
+            document.getElementById("output").innerHTML += "";
+            console.log(1);
+        }
+
+    }
+
+
+</script>
+que funcione bien
+while
+con for de otra manera 
+
+</html>

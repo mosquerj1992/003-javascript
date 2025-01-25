@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cuidad input</title>
+</head>
+
+<body>
+    <input type="text" id="city">
+    <input type="text" id="country">
+    <p id="myp"></p>
+    <button onclick="mostrar()"> Mostra la Informacion</button>
+</body>
+
+<script>
+    function mostrar() {
+        let city = document.getElementById("city").value;
+        let country = document.getElementById("country").value;
+
+        alert(`La cuidad es ${city} y el pais es ${country}`);
+        document.getElementById("myp").innerHTML = `La cuidad es ${city} y el pais es ${country}`;
+    }
+</script>
+
+</html>

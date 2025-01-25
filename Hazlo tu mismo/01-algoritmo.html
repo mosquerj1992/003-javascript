@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+
+</head>
+
+<body>
+    <input type="text" id="numero">
+    <button onclick="suma()"> suma de digitos </button>
+
+</body>
+
+<!-- //Es una etiqueta para enlazar <script src="./ JS"></script> -->
+<script>
+    const suma = () => {
+        let num = parseInt(document.getElementById("numero").value);
+        if (num > 10 && num < 100) {
+            let unidades = parseInt(document.getElementById("numero").value) % 10;
+            let numDecimales = parseInt(document.getElementById("numero").value) / 10;
+            let decenas = Math.floor(numDecimales);
+            alert('la suma de los digitos ${unidades} y ${decenas} es ${unidades mas decenas}');
+        } else {
+            alert("el numero debe ser mayor a 10 y menor a 100");
+        }
+
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if</title>
+</head>
+<body>
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <button onclick="mayor()">¿cual es el mayor</button>></button>
+</body>
+<script>
+    const mayor=()=>{
+        let num1=parseInt(document.getElementById("num1").value);
+        let num2=parseInt(document.getElementById("num2").value);
+        if(num1>num2){
+            alert(num1);
+        }else{
+            alert(num2);
+        }
+    }
+</script>
+
+</html>

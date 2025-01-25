@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero Divisible</title>
+</head>
+
+<body>
+    <input type="text" id="numero">
+    <button onclick="divisible()"> se pueda dividir para 4</button>
+
+</body>
+<script>
+    const divisible = () => {
+        let num = parseInt(document.getElementById("numero").value);
+        let esDivisible = (num % 4 == 0) ? alert("es divisible para 4") : alert("no es divisible para 4");
+    }
+
+</script>
+
+</html> 
+

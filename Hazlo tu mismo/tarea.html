@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bucle while </title>
+</head>
+
+<body>
+    <h1>TAREA
+        <P> Tabla de Multiplicar con while</P>
+    </h1>
+    <p>sentencia que crea un bucle que ejecuta un código mientras se cumpla una condición
+
+
+    <P></P>ermite ejecutar un bloque de codigo en forma repetitiva mientras se cumpla una determindad condicion
+
+    la condicion se evalua siempre al inicio del ciclo bucle <P></P>
+
+    si la condicion es valida ingresa al bucle y ejecuta el codigo
+
+    cuandodeja de cumplirse la condicion el programa sale del bucle y continua con el resto del programa</p> 
+    <P></P>
+
+    <p> Ingresar un numero para generar tablas de multiplicar del 1 al 10</p>
+    <input type="text" id="numero">
+    <button onclick="generateWhile()">Generar</button>
+    <p id="tablaMultiplicar"></p>
+
+
+</body>
+<Script>
+    // const generate = () => {
+    //     document.getElementById("tablaMultiplicar").innerText = "";
+    //     let num = parseInt(document.getElementById("numero").value);
+    //     for (let i = 1; i <= num; i++) {
+    //         for (let j = 0; j < 10; j++) {
+    //             document.getElementById("tablaMultiplicar").innerText += `${i} x ${j + 1} = ${i * (j + 1)} \n`;
+    //         }
+    //         document.getElementById("tablaMultiplicar").innerText += "\n\n";
+    //     }
+    // }
+
+    const generateWhile = () => {
+        document.getElementById("tablaMultiplicar").innerText = "";
+        let num = parseInt(document.getElementById("numero").value);
+        let i = 1;
+        while (i <= num) {
+            for (let j = 0; j < 10; j++) {
+                document.getElementById("tablaMultiplicar").innerText += `${i} x ${j + 1} = ${i * (j + 1)} \n`;
+            }
+            document.getElementById("tablaMultiplicar").innerText += "\n\n";
+            i++;
+        }
+    }
+</Script>
+
+</html>
