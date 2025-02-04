@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>OBJETOS</h1>
+    <button onclick="getElementById('output')">ejecutar</button>
+    <div id="output"></div>
+</body>
+
+<script>
+    //objetos
+
+    let persona = {
+        nombre: "jorge",
+        apellido: "mosquera",
+        edad: "36",
+        estatura: 1.45,
+        estadocivil: "true",
+        hijos: [
+            {
+                nombre: 'jorge'
+            },
+            {
+                nombre: 'joselyn'
+            }
+
+        ]
+
+    }
+    console.log(persona);
+    console.log(persona.hijos[0].nombre);
+    document.getElementById('output').innerText = JSON.stringify(persona.edad);
+
+
+    ///auto
+    let automovil = new Object();
+
+    automovil.marca = "Toyota";
+    automovil.modelo = "null";
+    automovil.año = "2020";
+    automovil.puertas = 4;
+    automovil.color = "blanco";
+
+    console.log(automovil.marca);
+
+
+    ///ejercicio 01
+    let computadora = {
+        precio: 100,
+        color: 'black',
+        memoria: '2000gb',
+    }
+
+
+    ///ejercico 02
+    let persona0 = new Object(
+        {
+            firstName: 'jorge',
+            lastName: 'mosquera',
+            age: 36
+
+        }
+    );
+    let persona1 = new Object(
+        {
+            firstName: 'joselyn',
+            lastName: 'bolaños',
+            age: 33
+
+        }
+    );
+    function Persona(firstName, lastName, age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
+    let p0 = new persona('evans', 'bolaños', 1);
+    let p1 = new persona('danna', 'bolaños', 1);
+
+    console.log(persona0)
+    console.log(persona1)
+
+
+
+</script>
+
+</html>
