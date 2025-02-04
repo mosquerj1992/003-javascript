@@ -75,9 +75,22 @@ console.log(months);
 
 
 //corte  elementos de un ray 
-const animal = ['ant','bison','camel','duck','elephat',];
+const animal = ['ant','bison','camel','duck','elephat'];
 console.log(animal.slice(2));
 console.log(animal.slice(2,4));
 console.log(animal.slice(1, 5));
 console.log(animal.slice(-2));
 console.log(animal.slice(2, -1));
+console.log(animal);
+
+add(35, 25,);
+function add(a, b) {
+    console.log(a + b);
+    return a + b;
+}
+add(55, 45,);
+
+
+
+
+

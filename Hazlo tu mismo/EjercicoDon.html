@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clases de Don</title>
+</head>
+
+<body>
+    <div id="ID">
+        <p class="myClass">
+            HOLA MUNDO
+        </p>
+        <P class="myClass">
+            JORGE mosquera
+
+        </P>
+        <ol>
+            <li>a1</li>
+            <li>b2</li>
+            <li>c3</li>
+            <li>d4</li>
+
+        </ol>
+    </div>
+    <h1></h1>
+
+    <ul class="navLinks" id ="navLinks">
+        <li>primero</li>
+        <li>segundo</li>
+
+    </ul>
+
+
+    <img src="" alt="">
+    <button onclick="show()"></button>
+
+    <script>
+        console.log(document.body);
+        console.log(document.URL);
+        console.log(document.title);
+
+        console.log(document.getElementById('ID'));
+        console.log(document.getElementsByClassName('navLinks'));
+        console.log(document.getElementsByTagName('li'));
+        console.log(document.querySelector('myClass'));
+        console.log(document.querySelectorAll('.myClass'));
+
+///ejemplo 001
+
+let unorderlistTag = document.getElementsByName('navLinks');
+console.log(unorderlistTag);
+
+let liTag = document.getElementsByTagName('li');
+console.log(liTag);
+console.log(liTag[0].innerHTML);
+console.log(liTag[0].value);
+console.log(liTag[1].innerHTML);
+console.log(liTag[1].value);
+
+/// crear elemento 
+
+let newLi = document.createElement('li');
+newLi.innerHTML = 'tercero';
+console.log(newLi);
+unorderlistTag.appendChild('newLi');
+
+const show = ()=>{
+    Document.querySelector('.myClass')
+    .forEach(element =>{element.classList.remove("hidden")});             
+    
+}
+
+const hide = ()=>{
+    Document.querySelector('.myClass')
+    .forEach(element =>{element.classList.remove("hidden")})             
+    
+}      
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index2</title>
+</head>
+
+<body>
+    <h1>Numero menor </h1>
+
+    <Button onclick="">click me</Button>
+    <p id="myp"></p>
+
+    <img src="/img/moto01.jpg" width="200px">
+    <img src="/img/moto2.jpg" width="200px">
+    <img src="/img/moto3.jpg" width="200px">
+
+
+</body>
+<script>
+    function minMax(arr){
+        let min = arr[0];
+        let max = arr[0];
+        for(let i = 0; i < arr.length; i++){
+            if(min >arr[i]){
+                min = arr[i];
+            }
+            if(max<arr[i]){
+                max = arr[i];
+            }
+        }
+        return [min, max];
+
+    }
+    minMax([20,4,5,30,2])
+
+</script>
+
+</html>
