@@ -1,23 +1,17 @@
-if (document.getElementById())
-
-
-
-    #container{
-    width: 100%;
-    background: tan;
-  }
-  
-  .paragraph{
-    width: 250px;
-    height: 100px;
-    background: brown;
-    color: white;
-  }
-  
-  #boton{
-    width: 200px;
-    padding: 5px 0px;
-    color: white;
-    background: slateblue;
-    text-align: center;
-  }
+const search = () => {
+    const filter =
+        document.getElementById("userInput").value.toUpperCase();
+    const li =
+        document.getElementById("countryUl").getElementsByTagName("li");
+    for (let i = 0; i < li.length; i++) {
+        const a = li[i].getElementsByTagName("a")[0];
+        const value = a.textContent || a.innerText;
+        if (value.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        }
+        else {
+            li[i].style.display = "none";
+        }
+    }
+}
+    
